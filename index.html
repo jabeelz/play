@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新竹老城區歷史古蹟步行路線</title>
+    <style>
+        :root {
+            --primary-color: #2C3E50;
+            --accent-color: #A0522D;
+            --bg-color: #F8F5F0;
+            --card-bg: #FFFFFF;
+            --text-color: #333333;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 1rem;
+            background-color: #E8E2D9;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            color: #5C5346;
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            border-bottom: 2px solid #D2B48C;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-left: 4px solid var(--accent-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            font-size: 1.25rem;
+        }
+
+        .card p {
+            flex-grow: 1;
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        /* 調整按鈕整體大小：縮小字體與內邊距 */
+        .map-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #4285F4;
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 0.8rem; /* 縮小上下左右的空間 */
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.85rem; /* 將字體縮小 */
+            transition: background-color 0.3s;
+            align-self: flex-start; /* 讓按鈕不要填滿整行，長度隨文字適應 */
+        }
+
+        .map-btn:hover {
+            background-color: #3367D6;
+        }
+
+        .map-btn .icon {
+            margin-right: 4px; /* 稍微拉近圖示跟文字的距離 */
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>新竹老城區歷史古蹟步行路線</h1>
+        <p>百年竹塹城 14 大景點巡禮</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>第一站：百年車站與後站日式風情</h2>
+            <div class="grid-container">
+                <article class="card">
+                    <h3>1. 新竹火車站</h3>
+                    <p>建於1913年，具有超過百年的歷史底蘊。作為台灣唯一沒有招牌的火車站，其融合了巴洛克與德式歌德風格的建築語彙，為新竹市早期的都市計畫奠定了優雅的歷史基調。</p>
+                    <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=新竹火車站" target="_blank"><span class="icon">📍</span>在 Google 地圖上查看</a>
+                </article>
+                
+                <article class="card">
+                    <h3>2. 下竹町書坊-新竹南大路日式警察宿舍</h3>
+                    <p>這座溫潤靜謐的日式木造建築曾是日治時期的警察宿舍群，如今轉身成為結合書店與小型展覽的文化空間。保留傳統日式建築的木造結構與庭園配置。</p>
+                    <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=下竹町" target="_blank"><span class="icon">📍</span>在 Google 地圖上查看</a>
+                </article>
+
+                <article class="card">
+                    <h3>3. 新竹市文化局玻璃工藝博物館</h3>
+                    <p>建築前身為日治時期用來接待高階官員的「新竹州自治會」，具有俐落典雅的現代主義風格。見證新竹與玻璃產業深厚的歷史淵源。</p>
+                    <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=新竹市文化局玻璃工藝博物館" target="_blank"><span class="icon">📍</span>在 Google 地圖上查看</a>
+                </article>
+
+                <article class="card">
+                    <h3>4. 叉子咖啡 Fork Cafe (原湖畔料亭)</h3>
+                    <p>四棟木屋依著麗池而立，日治時期曾是專門接待名流的高級料理亭，如今進駐了義式餐廳，是稍作歇息的好去處。</p>
+                    <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=叉子咖啡 新竹" target="_blank"><span class="icon">📍</span>在 Google 地圖上查看</a>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>第二站：前站人文與市場巡禮</h2>
+            <div class="grid-container">
+                <article class="card">
+                    <h3>5. 辛志平校長故居本館</h3>
+                    <p>這是一座隱身在東門街上的日式木造宿舍，充滿了教育家在此居住長達三十年的生活軌跡與歷史溫度。保留完整的日式木屋格局，重現過往日常樣貌。</p>
+                    <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=辛志平校長故居" target="_blank"><span class="icon">📍</span>在 Google 地圖上查看</a>
+                </article>
+
+                <article class="card">
+                    <h3>6. 新竹東門市場</h3>
+                    <p>這座曾是新竹最繁華商業中心的市場，建於1977年，也是全市第一座擁有手扶梯的建築，其空間活化是相當成功的都市更新案例。內部進駐眾多文青餐酒館、創意小吃。</p>
+                    <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=新竹東門市場" target="_blank"><span class="icon">📍</span>在 Google 地圖上查看</a>
+                </article>
+
+                <article class="card">
+                    <h3>7. 新竹市影像博物館</h3>
+                    <p>其前身為1933年落成的「有樂館」，是當時最具代表性的歐化劇場，承載著老新竹人的共同觀影記憶。建築外觀具有獨特的裝飾藝術（Art Deco）風格。</p>
+                    <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=新竹市影像博物館" target="_blank"><span class="icon">📍</span>在 Google 地圖上查看</a>
+                </article>
+
+                <article class="card">
+                    <h3>8. 新竹市美術館</h3>
+                    <p>前身是日治時期的「新竹市役所」。紅磚與洗石子交織的外觀對稱莊重，完美融合了西方古典與現代主義美學。免費參觀，讓人輕鬆穿梭於歷史與現代藝術之間。</p>
+                    <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=新竹市美術館" target="_blank"><span class="icon">📍</span>在 Google 地圖上查看</a>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>第三站：老城區政經與工藝記憶</h2>
+            <div class="grid-container">
+                <article class="card">
+                    <h3>9. OR Craft (或者工藝櫥窗)</h3>
+                    <p>由老宅改建的四層樓空間充滿設計感，結合書店、選物、展覽與咖啡的複合式空間。可以放慢腳步，尋找具在地特色的工藝選品。</p>
+                    <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=或者工藝櫥窗" target="_blank"><span class="icon">📍</span>在 Google 地圖上查看</a>
+                </article>
+
+                <article class="card">
+                    <h3>10. 新竹州廳 (新竹市政府)</h3>
+                    <p>這座西式紅磚建築建於1926年，不僅是新竹的行政中心，更是一座對外開放參觀的國定古蹟。建築內部擁有挑高空間與典雅的結構細節。</p>
+                    <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=新竹州廳" target="_blank"><span class="icon">📍</span>在 Google 地圖上查看</a>
+                </article>
+
+                <article class="card">
+                    <h3>11. 新竹市青少年館</h3>
+                    <p>建於日本大正年間，擁有近百年歷史。最初為「旭診療所」，現已轉型為質感圖書館。見證新竹從醫療衛生到文化閱讀的空間演進。</p>
+                    <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=新竹市青少年館" target="_blank"><span class="icon">📍</span>在 Google 地圖上查看</a>
+                </article>
+
+                <article class="card">
+                    <h3>12. 新竹州圖書館</h3>
+                    <p>這座採西洋古典風格的百年建築，以對稱立面和精緻窗櫺彰顯公共建築的穩重，在此能感受水系與都市紋理的絕佳結合。由星巴克進駐。</p>
+                    <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=新竹州圖書館" target="_blank"><span class="icon">📍</span>在 Google 地圖上查看</a>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>第四站：百年信仰與巷弄午茶</h2>
+            <div class="grid-container">
+                <article class="card">
+                    <h3>13. 新竹都城隍廟</h3>
+                    <p>這座近三百年歷史的信仰中心，建築雕刻繁複細緻，是體驗在地庶民文化的必訪之地。廟埕前方聚集眾多新竹著名在地小吃。</p>
+                    <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=新竹都城隍廟" target="_blank"><span class="icon">📍</span>在 Google 地圖上查看</a>
+                </article>
+
+                <article class="card">
+                    <h3>14. 李克承博士故居 (a-moom)</h3>
+                    <p>隱藏在巷弄內的這座典型日式木構建築散發著沉靜氣息，現為質感咖啡廳「a-moom」，是路線的完美句點。屋瓦、木梁與窗櫺等構造細節保存極為完整。</p>
+                    <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=李克承博士故居" target="_blank"><span class="icon">📍</span>在 Google 地圖上查看</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>祝您有一趟愉快的新竹老城區文化之旅！</p>
+    </footer>
+
+</body>
+</html>
